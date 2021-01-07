@@ -21,8 +21,8 @@ public class Note {
 
     }
 
-    public void notifyAboutDueDate(){
-
+    public String readNote(){
+        return null;
     }
 
     public Book getAbout() {
@@ -31,10 +31,6 @@ public class Note {
 
     public void setAbout(Book about) {
         this.about = about;
-    }
-
-    public String readNote(){
-        return null;
     }
 
     public String getISBN() {

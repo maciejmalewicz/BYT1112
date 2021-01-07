@@ -1,8 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
 
     private Long userId;
     private String name;
     private String surname;
+    private List<Note> notes = new ArrayList<>();
 
     public User(){
 
@@ -17,6 +21,18 @@ public class User {
     //returns true if there is such combination of username and password
     public boolean registerSelf(String user, String password){
         return false;
+    }
+
+    public void notifyAboutDueDate(){
+
+    }
+
+    public void addNote(Note note){
+
+    }
+
+    public void deleteNote(Note note){
+
     }
 
     public Long getUserId() {
