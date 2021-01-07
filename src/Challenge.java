@@ -13,19 +13,16 @@ public class Challenge {
     }
 
 
-    public void addChallenge() {
+    public void addChallenge(){
 
     }
-
-    public void completeChallenge() {
-
-    }
-
-    public void markProgress() {
+    public void completeChallenge(){
 
     }
+    public void markProgress(){
 
-    public void deleteChallenge() {
+    }
+    public void deleteChallenge(){
 
     }
 
@@ -52,4 +49,4 @@ public class Challenge {
     public void setDateDueChallenge(String dateDueChallenge) {
         this.dateDueChallenge = dateDueChallenge;
     }
-}
+    }
