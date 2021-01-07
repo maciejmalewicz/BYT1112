@@ -4,7 +4,7 @@ public class Review {
     private String contentDescription;
 
     public Review(){
-
+        
     }
 
 }
