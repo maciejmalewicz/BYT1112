@@ -23,6 +23,7 @@ public class Review {
     }
 
     public void deleteReview(int deletedID){
+        //method stub
     };
 
     public int getReviewID() {
