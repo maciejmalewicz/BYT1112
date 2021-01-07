@@ -2,8 +2,8 @@ public class BookDescription {
     private String ISBN;
     private String contentDescription;
 
-    public BookDescription(){
-
+    public BookDescription(String ISBN, String content){
+        this.contentDescription=content;
     }
 
     public void readDescription(){
