@@ -19,4 +19,18 @@ public class TestUtils {
         }
         Assert.assertEquals(fromGetter, fromReflection);
     }
+
+    public static void testSetter(Object object, String methodName, String fieldName, Object value){
+        Object fromReflection = null;
+        try {
+            Field field = object.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
+            field.set(object, value);
+            fromReflection = field.get(object);
+        } catch (Exception exc){
+            Assert.fail();
+            exc.printStackTrace();
+        }
+        Assert.assertEquals(value, fromReflection);
+    }
 }

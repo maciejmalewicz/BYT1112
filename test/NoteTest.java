@@ -18,4 +18,9 @@ public class NoteTest {
     public void testGetContent(){
         TestUtils.testGetter(tested, "getContentNote", "contentNote");
     }
+
+    @Test
+    public void testSetContent(){
+        TestUtils.testSetter(tested, "setContentNote", "contentNote", "mienso");
+    }
 }
