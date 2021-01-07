@@ -1,31 +1,28 @@
 public class Challenge {
     private int NumberOfPagesToRead;
     private int NumberOfAlreadyReadPage;
-    private Date dateDueChallenge;
+    private String dateDueChallenge;
 
     public Challenge() {
     }
 
-    public Challenge(int numberOfPagesToRead, int numberOfAlreadyReadPage, Date dateDueChallenge) {
+    public Challenge(int numberOfPagesToRead, int numberOfAlreadyReadPage, String dateDueChallenge) {
         NumberOfPagesToRead = numberOfPagesToRead;
         NumberOfAlreadyReadPage = numberOfAlreadyReadPage;
         this.dateDueChallenge = dateDueChallenge;
     }
 
 
-    public void addChallenge() {
+    public void addChallenge(){
 
     }
-
-    public void completeChallenge() {
-
-    }
-
-    public void markProgress() {
+    public void completeChallenge(){
 
     }
+    public void markProgress(){
 
-    public void deleteChallenge() {
+    }
+    public void deleteChallenge(){
 
     }
 
@@ -45,11 +42,11 @@ public class Challenge {
         NumberOfAlreadyReadPage = numberOfAlreadyReadPage;
     }
 
-    public Date getDateDueChallenge() {
+    public String getDateDueChallenge() {
         return dateDueChallenge;
     }
 
-    public void setDateDueChallenge(Date dateDueChallenge) {
+    public void setDateDueChallenge(String dateDueChallenge) {
         this.dateDueChallenge = dateDueChallenge;
     }
-}
+    }
