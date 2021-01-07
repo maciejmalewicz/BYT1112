@@ -3,7 +3,8 @@ public class Review {
     private String ISBN;
     private String contentDescription;
 
-    public Review(){
+    public Review(String content){
+        this.contentDescription=content;
         
     }
 
