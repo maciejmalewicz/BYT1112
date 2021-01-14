@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Owner {
-    public Long userId;
-    public List<Integer> bookIds = new ArrayList<>();
+    public Long userID;
+    //association
+    public List<Long> bookIds = new ArrayList<>();
 
     public Owner(Long userId) {
-        this.userId = userId;
+        this.userID = userId;
     }
 
     public void receiveBorrowedBook() {
@@ -17,19 +18,19 @@ public class Owner {
         return 0;
     }
 
-    public Long getUserId() {
-        return userId;
+    public Long getUserID() {
+        return userID;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUserID(Long userID) {
+        this.userID = userID;
     }
 
-    public List<Integer> getBookIds() {
+    public List<Long> getBookIds() {
         return bookIds;
     }
 
-    public void setBookIds(List<Integer> bookIds) {
+    public void setBookIds(List<Long> bookIds) {
         this.bookIds = bookIds;
     }
 }

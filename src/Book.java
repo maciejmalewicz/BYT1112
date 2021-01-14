@@ -8,6 +8,7 @@ public class Book {
     private String name;
     private byte[] image;
 
+    //associations
     private List<Review> review = new ArrayList<>();
     private BookDescription description;
     private List<Note> note = new ArrayList<>();

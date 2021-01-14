@@ -4,11 +4,13 @@ import java.util.Date;
 
 public class BookBorrowing {
     private Date dateLent;
-    private Date dateBarrow;
+    private Date dateDue;
+
+    //associations
     private User borrower;
     private Book book;
 
-    public void checkDueDates(){
+    public static void checkDueDates(){
 
     }
 
@@ -20,12 +22,12 @@ public class BookBorrowing {
         this.dateLent = dateLent;
     }
 
-    public Date getDateBarrow() {
-        return dateBarrow;
+    public Date getDateDue() {
+        return dateDue;
     }
 
-    public void setDateBarrow(Date dateBarrow) {
-        this.dateBarrow = dateBarrow;
+    public void setDateDue(Date dateDue) {
+        this.dateDue = dateDue;
     }
 
     public User getBorrower() {

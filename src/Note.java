@@ -5,6 +5,8 @@ public class Note {
     private String ISBN;
     private String contentNote;
     private Date dateOfUpdate;
+
+    //association
     private User addedBy;
 
     public Note(String ISBN, String contentNote, Date dateOfUpdate, User addedBy) {

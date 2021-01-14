@@ -5,11 +5,13 @@ public class Review {
 
     private static Long reviewIDs = 0L;
 
-    private Long reviewID;
-    private final String ISBN;
+    private final Long reviewID;
     private final String contentDescription;
-    private Long whoWroteUID;
     private Date dateOfUpdate;
+
+    //associations
+    private Long whoWroteUID;
+    private final String ISBN;
 
     public Review(String ISBN, String content, Long whoWroteUID){
         this.reviewID = reviewIDs++;
@@ -23,9 +25,9 @@ public class Review {
     return "Review of a book";
     }
 
-    public void deleteReview(int deletedID){
+    public static void deleteReview(int deletedID){
         //method stub
-    };
+    }
 
     public Long getReviewID() {
         return reviewID;

@@ -35,7 +35,7 @@ public class TestChallenge {
     }
     @Test
     public void getterTest() {
-        Challenge challengeTest=new Challenge(Challenge.dateDueChallenge);
+        Challenge challengeTest=new Challenge();
         Assert.assertEquals(12-04-2020, challengeTest.getDateDueChallenge());
 
 

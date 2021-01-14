@@ -6,7 +6,7 @@ public class TestOwner {
 
     @Test
     public void recieveBorrowedBook() {
-        Owner owner=new Owner(1,1) ;
+        Owner owner=new Owner(1L) ;
         Assert.assertEquals(1,1);
 
 

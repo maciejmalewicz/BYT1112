@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class Challenge {
-    public static Date dateDueChallenge;
+    public Date dateDueChallenge;
     private int numberOfPagesToRead;
     private int numberOfAlreadyReadPages;
 
@@ -15,20 +15,12 @@ public class Challenge {
        //dateDueChallenge = dateDueChallenge;
     }
 
-    public int addChallenge(){
-        return numberOfPagesToRead;
+
+    public void completeChallenge(){
 
     }
-    public int completeChallenge(){
-        return numberOfAlreadyReadPages;
 
-    }
-    public int markProgress(){
-        return numberOfAlreadyReadPages;
-
-    }
-    public void deleteChallenge(){
-
+    public void markProgress(int progress){
 
     }
 

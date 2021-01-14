@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class User extends Owner{
+public class User extends Owner {
 
     private String name;
     private String surname;
+
+    //associations
     private List<Note> notes = new ArrayList<>();
     private List<Challenge> challenges = new ArrayList<>();
     private List<Review> reviews = new ArrayList<>();
@@ -35,6 +37,14 @@ public class User extends Owner{
     }
 
     public void deleteNote(Note note){
+
+    }
+
+    public void addChallenge(Challenge challenge){
+
+    }
+
+    public void deleteChallenge(Challenge challenge){
 
     }
 

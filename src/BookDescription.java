@@ -7,7 +7,7 @@ public class BookDescription {
         this.contentDescription=content;
     }
 
-    public String readDescription(String ISBN){
+    public static String readDescription(String ISBN){
         return "Some book description";
     }
 
