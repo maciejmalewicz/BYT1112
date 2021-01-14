@@ -12,7 +12,7 @@ public class NoteTest {
     @Before
     public void setup(){
 
-        tested = new Note("AAASDC", "Very interesting", new Date(), new User(), null);
+        tested = new Note("AAASDC", "Very interesting", new Date(), new User(1l), null);
     }
 
     @Test

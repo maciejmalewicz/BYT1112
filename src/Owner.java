@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Owner {
     public Long userId;
-    public List<Integer> bookId = new ArrayList<>();
+    public List<Integer> bookIds = new ArrayList<>();
 
 
     public Owner(Long userId) {
@@ -26,11 +26,11 @@ public class Owner {
         this.userId = userId;
     }
 
-    public List<Integer> getBookId() {
-        return bookId;
+    public List<Integer> getBookIds() {
+        return bookIds;
     }
 
-    public void setBookId(List<Integer> bookId) {
-        this.bookId = bookId;
+    public void setBookIds(List<Integer> bookIds) {
+        this.bookIds = bookIds;
     }
 }

@@ -18,4 +18,5 @@ public class ReadingProgress {
     public void setPagesRead(int pagesRead) {
         this.pagesRead = pagesRead;
     }
+
 }
