@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Book {
 
     private Long bookId;
@@ -5,7 +7,7 @@ public class Book {
     private String name;
     private Byte[] image;
 
-    private Review review;
+    private List<Review> review;
     private BookDescription description;
     private Note note;
     private User user;
@@ -43,11 +45,11 @@ public class Book {
         this.image = image;
     }
 
-    public Review getReview() {
+    public List<Review> getReview() {
         return review;
     }
 
-    public void setReview(Review review) {
+    public void setReview(List<Review> review) {
         this.review = review;
     }
 
