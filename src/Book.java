@@ -6,23 +6,20 @@ public class Book {
     private Long bookId;
     private String ISBN;
     private String name;
-    private Byte[] image;
+    private byte[] image;
 
     private List<Review> review = new ArrayList<>();
     private BookDescription description;
     private List<Note> note = new ArrayList<>();
     private Owner owner;
 
-    public void addNote(String note){
+    public void addNote(String note, User user){
 
     }
-    public void addReview(String note){
+    public void addReview(String review, User author){
 
     }
-    public void addPhoto(){
-
-    }
-    public void setChallenge(){
+    public void addPhoto(byte[] photo){
 
     }
     public void borrowBookToSB(){
@@ -53,11 +50,11 @@ public class Book {
         this.name = name;
     }
 
-    public Byte[] getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(Byte[] image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

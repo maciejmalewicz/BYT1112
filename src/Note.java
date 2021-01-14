@@ -6,14 +6,12 @@ public class Note {
     private String contentNote;
     private Date dateOfUpdate;
     private User addedBy;
-    private Book about;
 
-    public Note(String ISBN, String contentNote, Date dateOfUpdate, User addedBy, Book book) {
+    public Note(String ISBN, String contentNote, Date dateOfUpdate, User addedBy) {
         this.ISBN = ISBN;
         this.contentNote = contentNote;
         this.dateOfUpdate = dateOfUpdate;
         this.addedBy = addedBy;
-        this.about = book;
     }
 
     public void editNote(String ISBN, String contentNote, Date dateOfUpdate){
@@ -22,14 +20,6 @@ public class Note {
 
     public String readNote(){
         return null;
-    }
-
-    public Book getAbout() {
-        return about;
-    }
-
-    public void setAbout(Book about) {
-        this.about = about;
     }
 
     public String getISBN() {
