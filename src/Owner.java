@@ -1,14 +1,25 @@
 public class Owner {
-    private int userId;
+    public  int userId;
+    public  int bookId;
+
+
+    public Owner(int userId,int bookId) {
+        this.userId = userId;
+        this.bookId=bookId;
+    }
+
+
 
     public int getUserId() {
         return userId;
     }
 
     public void recieveBorrowedBook() {
+
     }
 
-    public void registerBook() {
+    public double registerBook() {
+        return 0;
     }
 
     public void setUserId(int userId) {
@@ -23,15 +34,9 @@ public class Owner {
         this.bookId = bookId;
     }
 
-    public Owner(int userId, int bookId) {
-        this.userId = userId;
-        this.bookId = bookId;
-    }
 
-    private int bookId;
 
-    public Owner() {
-    }
+
 
 
 }
