@@ -1,20 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Owner {
-    public  int userId;
-    public  int bookId;
+    public Long userId;
+    public List<Integer> bookId = new ArrayList<>();
 
 
-    public Owner(int userId,int bookId) {
+    public Owner(Long userId) {
         this.userId = userId;
-        this.bookId=bookId;
     }
 
-
-
-    public int getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void recieveBorrowedBook() {
+    public void receiveBorrowedBook() {
 
     }
 
@@ -22,21 +22,15 @@ public class Owner {
         return 0;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
-    public int getBookId() {
+    public List<Integer> getBookId() {
         return bookId;
     }
 
-    public void setBookId(int bookId) {
+    public void setBookId(List<Integer> bookId) {
         this.bookId = bookId;
     }
-
-
-
-
-
-
 }

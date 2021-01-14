@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.List;
 
 public class Note {
 
@@ -8,6 +9,7 @@ public class Note {
     private User addedBy;
     private Book about;
 
+
     public Note() {
     }
 
@@ -15,6 +17,8 @@ public class Note {
         this.ISBN = ISBN;
         this.contentNote = contentNote;
         this.dateOfUpdate = dateOfUpdate;
+        this.addedBy = addedBy;
+        this.about = book;
     }
 
     public void editNote(String ISBN, String contentNote, Date dateOfUpdate){

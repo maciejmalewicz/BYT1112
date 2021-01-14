@@ -2,29 +2,29 @@ import java.util.Date;
 
 public class Challenge {
     public static Date dateDueChallenge;
-    private int NumberOfPagesToRead;
-    private int NumberOfAlreadyReadPage;
+    private int numberOfPagesToRead;
+    private int numberOfAlreadyReadPage;
 
     public Challenge(Date dateDueChallenge) {
         this.dateDueChallenge = dateDueChallenge;
     }
 
     public Challenge(int numberOfPagesToRead, int numberOfAlreadyReadPage) {
-        NumberOfPagesToRead = numberOfPagesToRead;
-        NumberOfAlreadyReadPage = numberOfAlreadyReadPage;
+        this.numberOfPagesToRead = numberOfPagesToRead;
+        this.numberOfAlreadyReadPage = numberOfAlreadyReadPage;
        //dateDueChallenge = dateDueChallenge;
     }
 
     public int addChallenge(){
-        return NumberOfPagesToRead;
+        return numberOfPagesToRead;
 
     }
     public int completeChallenge(){
-        return NumberOfAlreadyReadPage;
+        return numberOfAlreadyReadPage;
 
     }
     public int markProgress(){
-        return NumberOfAlreadyReadPage;
+        return numberOfAlreadyReadPage;
 
     }
     public void deleteChallenge(){
@@ -33,19 +33,19 @@ public class Challenge {
     }
 
     public int getNumberOfPagesToRead() {
-        return NumberOfPagesToRead;
+        return numberOfPagesToRead;
     }
 
     public void setNumberOfPagesToRead(int numberOfPagesToRead) {
-        NumberOfPagesToRead = numberOfPagesToRead;
+        this.numberOfPagesToRead = numberOfPagesToRead;
     }
 
     public int getNumberOfAlreadyReadPage() {
-        return NumberOfAlreadyReadPage;
+        return numberOfAlreadyReadPage;
     }
 
     public void setNumberOfAlreadyReadPage(int numberOfAlreadyReadPage) {
-        NumberOfAlreadyReadPage = numberOfAlreadyReadPage;
+        this.numberOfAlreadyReadPage = numberOfAlreadyReadPage;
     }
 
     public Date getDateDueChallenge() {
