@@ -1,5 +1,4 @@
 import java.util.Date;
-import java.util.List;
 
 public class Note {
 
@@ -8,10 +7,6 @@ public class Note {
     private Date dateOfUpdate;
     private User addedBy;
     private Book about;
-
-
-    public Note() {
-    }
 
     public Note(String ISBN, String contentNote, Date dateOfUpdate, User addedBy, Book book) {
         this.ISBN = ISBN;

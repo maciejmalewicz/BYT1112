@@ -3,19 +3,20 @@ import java.util.Date;
 
 public class Review {
 
-    private int reviewID = 0;
+    private static Long reviewIDs = 0L;
+
+    private Long reviewID;
     private final String ISBN;
     private final String contentDescription;
-    private int whoWroteUID;
+    private Long whoWroteUID;
     private Date dateOfUpdate;
 
-    public Review(String ISBN, String content){
-        this.reviewID= ++reviewID;
+    public Review(String ISBN, String content, Long whoWroteUID){
+        this.reviewID = reviewIDs++;
         this.ISBN = ISBN;
         this.contentDescription=content;
-        //TODO: once all the parts is ready here's where we'll link user with his review
-        // this.whoWroteUID=
-        this.dateOfUpdate= Calendar.getInstance().getTime();
+        this.whoWroteUID = whoWroteUID;
+        this.dateOfUpdate = Calendar.getInstance().getTime();
     }
 
     public String readReview(){
@@ -26,12 +27,8 @@ public class Review {
         //method stub
     };
 
-    public int getReviewID() {
+    public Long getReviewID() {
         return reviewID;
-    }
-
-    public void setReviewID(int reviewID) {
-        this.reviewID = reviewID;
     }
 
     public String getISBN() {
@@ -42,11 +39,11 @@ public class Review {
         return contentDescription;
     }
 
-    public int getWhoWroteUID() {
+    public Long getWhoWroteUID() {
         return whoWroteUID;
     }
 
-    public void setWhoWroteUID(int whoWroteUID) {
+    public void setWhoWroteUID(Long whoWroteUID) {
         this.whoWroteUID = whoWroteUID;
     }
 
@@ -57,4 +54,5 @@ public class Review {
     public void setDateOfUpdate(Date dateOfUpdate) {
         this.dateOfUpdate = dateOfUpdate;
     }
+
 }

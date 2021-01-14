@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
@@ -7,10 +8,9 @@ public class Book {
     private String name;
     private Byte[] image;
 
-    private List<Review> review;
+    private List<Review> review = new ArrayList<>();
     private BookDescription description;
-    private Note note;
-    private User user;
+    private List<Note> note = new ArrayList<>();
     private Owner owner;
 
     public Long getBookId() {
@@ -61,20 +61,12 @@ public class Book {
         this.description = description;
     }
 
-    public Note getNote() {
+    public List<Note> getNote() {
         return note;
     }
 
-    public void setNote(Note note) {
+    public void setNote(List<Note> note) {
         this.note = note;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Owner getOwner() {

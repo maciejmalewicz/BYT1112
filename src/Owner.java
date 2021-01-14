@@ -5,13 +5,8 @@ public class Owner {
     public Long userId;
     public List<Integer> bookIds = new ArrayList<>();
 
-
     public Owner(Long userId) {
         this.userId = userId;
-    }
-
-    public Long getUserId() {
-        return userId;
     }
 
     public void receiveBorrowedBook() {
@@ -20,6 +15,10 @@ public class Owner {
 
     public double registerBook() {
         return 0;
+    }
+
+    public Long getUserId() {
+        return userId;
     }
 
     public void setUserId(Long userId) {
