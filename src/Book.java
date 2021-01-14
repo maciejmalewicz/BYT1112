@@ -1,23 +1,23 @@
 public class Book {
 
-    private int BookId;
-    private int ISBN;
+    private Long bookId;
+    private String ISBN;
     private String name;
-    private String image;
+    private Byte[] image;
 
-    public int getBookId() {
-        return BookId;
+    public Long getBookId() {
+        return bookId;
     }
 
-    public void setBookId(int bookId) {
-        BookId = bookId;
+    public void setBookId(Long bookId) {
+        this.bookId = bookId;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
