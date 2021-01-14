@@ -13,6 +13,22 @@ public class Book {
     private List<Note> note = new ArrayList<>();
     private Owner owner;
 
+    public void addNote(String note){
+
+    }
+    public void addReview(String note){
+
+    }
+    public void addPhoto(){
+
+    }
+    public void setChallenge(){
+
+    }
+    public void borrowBookToSB(){
+
+    }
+
     public Long getBookId() {
         return bookId;
     }
@@ -77,20 +93,6 @@ public class Book {
         this.owner = owner;
     }
 
-    public void AddNote(String note){
 
-    }
-    public void AddReview(String note){
-
-    }
-    public void AddPhoto(){
-
-    }
-    public void SetChallenge(){
-
-    }
-    public void BarrowBookToSB(){
-
-    }
 
 }
