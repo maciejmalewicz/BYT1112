@@ -14,6 +14,10 @@ public class Book {
     private List<Note> note = new ArrayList<>();
     private Owner owner;
 
+    public Book(Long bookId) {
+        this.bookId = bookId;
+    }
+
     public void addNote(String note, User user){
 
     }

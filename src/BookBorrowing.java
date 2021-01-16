@@ -10,6 +10,13 @@ public class BookBorrowing {
     private User borrower;
     private Book book;
 
+    public BookBorrowing(Date dateLent, Date dateDue, User borrower, Book book) {
+        this.dateLent = dateLent;
+        this.dateDue = dateDue;
+        this.borrower = borrower;
+        this.book = book;
+    }
+
     public static void checkDueDates(){
 
     }
