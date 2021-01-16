@@ -17,6 +17,7 @@ public class NoteTest {
     @Test
     public void testGetContent(){
         TestUtils.testGetter(tested, "getContentNote", "contentNote");
+        TestUtils.testGetter(tested, "getISBN", "ISBN");
     }
 
     @Test

@@ -14,17 +14,17 @@ public class TestOwner {
 
     @Test
     public void registerBook() {
-        Owner ownerTest=new Owner();
+     //   Owner ownerTest=new Owner();
 
     }
     @Test
     public void getterTest() {
-        Owner ownerTest=new Owner(3,3);
+       // Owner ownerTest=new Owner(3,3);
 
     }
     @Test
     public void setterTest() {
-        Owner ownerTest=new Owner(4,4);
+       // Owner ownerTest=new Owner(4,4);
 
     }
 
