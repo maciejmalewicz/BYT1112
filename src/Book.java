@@ -18,6 +18,18 @@ public class Book {
         this.bookId = bookId;
     }
 
+    public Book(Long bookId, String ISBN, String name, byte[] image,
+                List<Review> review, BookDescription description, List<Note> note, Owner owner) {
+        this.bookId = bookId;
+        this.ISBN = ISBN;
+        this.name = name;
+        this.image = image;
+        this.review = review;
+        this.description = description;
+        this.note = note;
+        this.owner = owner;
+    }
+
     public void addNote(String note, User user){
 
     }
