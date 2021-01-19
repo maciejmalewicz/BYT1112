@@ -18,6 +18,7 @@ public class OwnerTest {
     public void setup(){
         testDate = new Date();
         testOwner = new Owner(1L);
+        bookIds = new ArrayList<>();
 
 
     }
@@ -25,7 +26,7 @@ public class OwnerTest {
     @Test
     public void testConstruction(){
         Assert.assertEquals(testOwner.getUserID() ,Long.valueOf(1L));
-        Assert.assertEquals(testOwner.getBookIds(), 1L);
+        Assert.assertEquals(testOwner.getBookIds(), bookIds);
 
     }
 
