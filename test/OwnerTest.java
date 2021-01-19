@@ -39,7 +39,7 @@ public class OwnerTest {
     @Test
     public void testSetters(){
         TestUtils.testSetter(testOwner, "setUserID", "userID", 1L);
-        TestUtils.testSetter(testOwner, "setBookIds", "bookIds", 1L);
+        TestUtils.testSetter(testOwner, "setBookIds", "bookIds", bookIds);
     }
 }
 
