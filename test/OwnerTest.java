@@ -2,13 +2,17 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class OwnerTest {
 
 
     public Date testDate;
     public Owner testOwner;
+    public List<Long> bookIds;
+
 
     @Before
     public void setup(){

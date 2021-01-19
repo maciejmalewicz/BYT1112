@@ -11,8 +11,10 @@ public class ChallengeTest {
     public Date testDate;
 
 
+
     @Before
     public void setup(){
+        testDate = new Date();
         challengeTested = new Challenge(testDate,90,20);
         challengeTested.setNumberOfPagesToRead(90);
         challengeTested.setNumberOfAlreadyReadPages(20);
@@ -33,9 +35,9 @@ public class ChallengeTest {
 
     @Test
     public void testSetters() {
-        TestUtils.testSetter(challengeTested, "setNumberOfPagesToRead", "numberOfPagesToRead", "34");
+        TestUtils.testSetter(challengeTested, "setNumberOfPagesToRead", "numberOfPagesToRead", 34);
         TestUtils.testSetter(challengeTested, "setDateDueChallenge", "dateDueChallenge", new Date());
-        TestUtils.testSetter(challengeTested, "setNumberOfAlreadyReadPages", "numberOfAlreadyReadPages", "32");
+        TestUtils.testSetter(challengeTested, "setNumberOfAlreadyReadPages", "numberOfAlreadyReadPages", 32);
     }
 
 }
