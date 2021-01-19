@@ -32,8 +32,8 @@ public class OwnerTest {
 
     @Test
     public void testGetters(){
-        TestUtils.testGetter(testOwner, "getUserID()", "userID");
-        TestUtils.testGetter(testOwner, "getBookIds()", "bookIds");
+        TestUtils.testGetter(testOwner, "getUserID", "userID");
+        TestUtils.testGetter(testOwner, "getBookIds", "bookIds");
     }
 
     @Test
