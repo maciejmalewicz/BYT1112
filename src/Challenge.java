@@ -9,7 +9,7 @@ public class Challenge {
         this.dateDueChallenge = dateDueChallenge;
     }
 
-    public Challenge(int numberOfPagesToRead, int numberOfAlreadyReadPage) {
+    public Challenge(Date date, int numberOfPagesToRead, int numberOfAlreadyReadPage) {
         this.numberOfPagesToRead = numberOfPagesToRead;
         this.numberOfAlreadyReadPages = numberOfAlreadyReadPage;
        //dateDueChallenge = dateDueChallenge;

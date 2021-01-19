@@ -18,8 +18,8 @@ public class OwnerTest {
 
     @Test
     public void testConstruction(){
-        Assert.assertEquals(testOwner.getUserID(), "1");
-        Assert.assertEquals(testOwner.getBookIds(), "1");
+        Assert.assertEquals(testOwner.getUserID() ,Long.valueOf(1L));
+        Assert.assertEquals(testOwner.getBookIds(), 1L);
 
     }
 
@@ -31,8 +31,8 @@ public class OwnerTest {
 
     @Test
     public void testSetters(){
-        TestUtils.testSetter(testOwner, "setUserID", "userID", "1");
-        TestUtils.testSetter(testOwner, "setBookIds", "bookIds", "1");
+        TestUtils.testSetter(testOwner, "setUserID", "userID", 1L);
+        TestUtils.testSetter(testOwner, "setBookIds", "bookIds", 1L);
     }
 }
 
