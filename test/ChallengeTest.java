@@ -23,7 +23,7 @@ public class ChallengeTest {
 
     @Test
     public void testConstructor(){
-        Assert.assertEquals(challengeTested.getNumberOfAlreadyReadPages(),90);
+        Assert.assertEquals(challengeTested.getNumberOfAlreadyReadPages(),20);
     }
 
     @Test

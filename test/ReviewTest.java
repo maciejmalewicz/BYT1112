@@ -35,6 +35,5 @@ public class ReviewTest {
         currentTimeAnd24H.add(Calendar.HOUR,24);
         testReview.setDateOfUpdate(currentTimeAnd24H.getTime());
         Assert.assertTrue("Dates aren't close enough to each other!", (currentTimeAnd24H.getTime().compareTo(testReview.getDateOfUpdate()) ) < 1000);
-
     }
 }
