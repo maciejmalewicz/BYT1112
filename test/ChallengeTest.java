@@ -8,13 +8,15 @@ import java.util.Date;
 public class ChallengeTest {
 
     Challenge challengeTested;
+    public Date testDate;
+
 
     @Before
     public void setup(){
-        challengeTested = new Challenge(new Date(24-01-2020),90,20);
+        challengeTested = new Challenge(testDate,90,20);
         challengeTested.setNumberOfPagesToRead(90);
         challengeTested.setNumberOfAlreadyReadPages(20);
-        challengeTested.setDateDueChallenge(new Date(24-01-2020));
+        challengeTested.setDateDueChallenge(testDate);
     }
 
     @Test
@@ -32,7 +34,7 @@ public class ChallengeTest {
     @Test
     public void testSetters() {
         TestUtils.testSetter(challengeTested, "setNumberOfPagesToRead", "numberOfPagesToRead", "34");
-        TestUtils.testSetter(challengeTested, "setDateDueChallenge", "dateDueChallenge", "24-01-2000");
+        TestUtils.testSetter(challengeTested, "setDateDueChallenge", "dateDueChallenge", new Date());
         TestUtils.testSetter(challengeTested, "setNumberOfAlreadyReadPages", "numberOfAlreadyReadPages", "32");
     }
 

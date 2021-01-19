@@ -14,6 +14,8 @@ public class OwnerTest {
     public void setup(){
         testDate = new Date();
         testOwner = new Owner(1L);
+
+
     }
 
     @Test
