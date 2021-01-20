@@ -14,7 +14,7 @@ public class ReviewTest {
     public void getterTest(){
         Review testReview = new Review("2","Some another review", 2L);
         Assert.assertEquals((Long)0L,testReview.getReviewID());
-        //TODO: LINK Assert.assertEquals(1,testReview.getWhoWroteUID());
+        Assert.assertEquals((Long)2L,testReview.getWhoWroteUID());
         Assert.assertEquals("Some another review",testReview.getContentDescription());
         Assert.assertTrue("Dates aren't close enough to each other!", (Calendar.getInstance().getTime().compareTo(testReview.getDateOfUpdate()) ) < 1000);
         Assert.assertEquals("2",testReview.getISBN());
